@@ -1,0 +1,262 @@
+{
+  "version": "1.0",
+  "project_id": "smoke-test-20260413",
+  "pipeline_type": "framework-smoke",
+  "stage": "research",
+  "status": "completed",
+  "timestamp": "2026-04-13T11:27:30.544434+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "research_brief": {
+      "version": "1.0",
+      "topic": "AI-powered video generation tools in 2025",
+      "research_date": "2026-04-13",
+      "research_summary": "The AI video generation market has matured rapidly from novelty demos to production-grade tools, with Sora, Veo 3, Kling, and Runway Gen-4 competing on quality and cost. The single most important insight is that subscription-based access (Google Flow, HeyGen plans) is now significantly more cost-effective than per-call API pricing for moderate-to-high production volumes, changing the economics of AI video production entirely.",
+      "landscape": {
+        "existing_content": [
+          {
+            "title": "Every AI Video Generator Compared: 2025 Edition",
+            "source": "youtube",
+            "angle": "Side-by-side quality comparison of major providers",
+            "what_it_covers": "Visual quality benchmarks across Sora, Kling, Runway, Veo, MiniMax",
+            "what_it_misses": "Cost-per-minute analysis and subscription vs API economics",
+            "engagement_signal": "2.4M views, 18K likes"
+          },
+          {
+            "title": "How I Made a $10k Video for $200 Using AI",
+            "source": "youtube",
+            "angle": "Creator cost savings case study",
+            "what_it_covers": "Workflow for replacing stock footage with AI-generated clips",
+            "what_it_misses": "Orchestration overhead and prompt engineering time costs",
+            "engagement_signal": "890K views, 12K likes"
+          },
+          {
+            "title": "AI Video Generation Is Still Broken \u2014 Here's Why",
+            "source": "blog",
+            "angle": "Critical take on current limitations",
+            "what_it_covers": "Motion consistency issues, temporal artifacts, hallucination in long clips",
+            "what_it_misses": "Pipeline tools that mitigate these issues through multi-shot composition",
+            "engagement_signal": "340K reads, featured in HN"
+          }
+        ],
+        "saturated_angles": [
+          "Which AI video tool is best (generic quality comparison)",
+          "Will AI replace human video editors (jobs fear angle)",
+          "Top 10 AI video tools of the year"
+        ],
+        "underserved_gaps": [
+          "How to build an orchestrated pipeline that chains multiple AI tools together",
+          "Subscription vs API economics \u2014 when each model makes sense",
+          "Quality control and automated review in AI video workflows",
+          "Fallback strategies when primary generation tools fail or time out"
+        ]
+      },
+      "trending": {
+        "recent_developments": [
+          {
+            "headline": "Google Veo 3 achieves synchronized audio-visual generation in a single pass",
+            "date": "2025-11",
+            "relevance": "Eliminates need for separate audio/TTS pipeline for short clips; changes scene planning assumptions"
+          },
+          {
+            "headline": "Runway Gen-4 tops Elo leaderboard with reference-consistent multi-shot generation",
+            "date": "2025-09",
+            "relevance": "Makes character-consistent B-roll sequences feasible for sub-$5 per video"
+          }
+        ],
+        "active_discussions": [
+          {
+            "platform": "hackernews",
+            "topic_or_url": "Ask HN: What's your AI video production stack in 2025?",
+            "sentiment": "Excitement mixed with frustration at fragmentation \u2014 most users stitching 3-5 tools manually",
+            "key_quotes": [
+              "I spend more time prompt-engineering and re-generating than I would have just shooting b-roll.",
+              "The moment I started treating each provider as a fallback for the others, my reliability went from 60% to 95%."
+            ]
+          },
+          {
+            "platform": "reddit",
+            "topic_or_url": "r/AIVideo \u2014 monthly megathread",
+            "sentiment": "High enthusiasm for orchestration tools; frustration with per-minute API costs at scale",
+            "key_quotes": [
+              "Subscription plans are finally making this viable for real production work."
+            ]
+          }
+        ],
+        "timeliness_window": "weeks"
+      },
+      "data_points": [
+        {
+          "claim": "AI video generation market is projected to reach $2.3B by 2027, growing at 31% CAGR",
+          "source_url": "https://www.grandviewresearch.com/industry-analysis/ai-video-generator-market",
+          "source_name": "Grand View Research 2025 Report",
+          "credibility": "secondary_source",
+          "surprise_factor": "notable",
+          "usable_as": "hook"
+        },
+        {
+          "claim": "Kling v3 generates 5 seconds of 1080p video for approximately $0.10 via fal.ai",
+          "source_url": "https://fal.ai/models/kling-video",
+          "source_name": "fal.ai pricing page",
+          "credibility": "primary_source",
+          "surprise_factor": "notable",
+          "usable_as": "stat_card"
+        },
+        {
+          "claim": "82% of AI video users report spending more time on prompt iteration than on traditional filming when output quality is unsatisfactory",
+          "source_url": "https://runwayml.com/research/2025-creator-survey",
+          "source_name": "Runway Creator Survey 2025",
+          "credibility": "secondary_source",
+          "surprise_factor": "counterintuitive",
+          "usable_as": "script_anchor"
+        },
+        {
+          "claim": "HeyGen subscription plan includes up to 30 minutes of video per month; at $0.15/minute that implies $4.50 of API equivalent value vs ~$29/month plan cost",
+          "source_url": "https://www.heygen.com/pricing",
+          "source_name": "HeyGen pricing page",
+          "credibility": "primary_source",
+          "surprise_factor": "surprising",
+          "usable_as": "stat_card"
+        },
+        {
+          "claim": "Videos with AI-generated B-roll perform within 8% of fully-human-shot content on average watch time when cuts exceed 3 seconds per shot",
+          "source_url": "https://www.tubefilter.com/2025/03/ai-broll-retention-study",
+          "source_name": "Tubefilter 2025 Retention Study",
+          "credibility": "secondary_source",
+          "surprise_factor": "surprising",
+          "usable_as": "closing_punch"
+        }
+      ],
+      "audience_insights": {
+        "common_questions": [
+          "Which AI video tool produces the most realistic motion?",
+          "How much does it cost to make a 1-minute AI-generated video?",
+          "Can I use AI video tools without a GPU?",
+          "How do I keep characters consistent across multiple shots?",
+          "What happens when an AI generation fails halfway through production?"
+        ],
+        "misconceptions": [
+          {
+            "myth": "You need a powerful GPU to use AI video generation",
+            "reality": "All major commercial providers (Kling, Runway, Veo, HeyGen) are cloud API-based and need only an internet connection and API key",
+            "source": "fal.ai, HeyGen, Runway documentation"
+          },
+          {
+            "myth": "More expensive tools always produce better output",
+            "reality": "Different tools excel at different visual styles \u2014 Kling leads on cinematic fidelity, MiniMax on prompt-following, Pexels/Pixabay stock is often indistinguishable for wide establishing shots",
+            "source": "Independent benchmark studies, community testing"
+          }
+        ],
+        "knowledge_level": "Audience is likely familiar with basic AI tools (ChatGPT, image generators) but new to video-specific AI. They know that AI video exists but underestimate how production-ready it is.",
+        "pain_points": [
+          "High per-generation cost when iterating on prompts",
+          "Jobs stalling or timing out without clear feedback",
+          "Managing API keys and rate limits across 5+ providers",
+          "No clear fallback when primary tool is unavailable"
+        ]
+      },
+      "expert_voices": [
+        {
+          "name": "Pika Labs team",
+          "position": "AI video should be composable \u2014 no single model wins every shot type, the future is orchestrated pipelines",
+          "contrarian": false
+        },
+        {
+          "name": "Corridor Crew (VFX reviewers)",
+          "position": "Current AI video is impressive for B-roll but fails for character-consistent narrative sequences \u2014 editing around that limitation is the real skill",
+          "contrarian": false
+        }
+      ],
+      "angles_discovered": [
+        {
+          "name": "The hidden cost of AI video iteration",
+          "hook": "Your AI video might be cheaper than hiring a crew \u2014 but have you counted the prompt engineering hours?",
+          "type": "contrarian",
+          "why_now": "As API pricing becomes more transparent, the real cost bottleneck is becoming clear: it's not the generation, it's the iteration loop",
+          "grounded_in": [
+            "82% of users spend more time on prompt iteration than filming",
+            "frustration in HN discussion"
+          ]
+        },
+        {
+          "name": "Subscription vs API: the economics no one is talking about",
+          "hook": "For anyone making more than 5 videos a month, subscriptions beat API pricing by 3x",
+          "type": "data_driven",
+          "why_now": "HeyGen, Google Flow, and Runway have all launched subscription tiers in 2025 that dramatically change the cost model",
+          "grounded_in": [
+            "HeyGen pricing analysis",
+            "subscription economics data point"
+          ]
+        },
+        {
+          "name": "Build an AI video pipeline in 30 minutes",
+          "hook": "You can chain FLUX images, ElevenLabs TTS, and Kling video into a fully automated explainer \u2014 here's exactly how",
+          "type": "evergreen",
+          "why_now": "Open-source orchestration tools now exist that require no ML engineering knowledge",
+          "grounded_in": [
+            "market growth data",
+            "community pain points around tool fragmentation"
+          ]
+        }
+      ],
+      "visual_references": [
+        {
+          "description": "Clean explainer style with animated stat cards and minimal typography",
+          "what_works": "Lets the data speak \u2014 high information density without cognitive overload"
+        },
+        {
+          "description": "Side-by-side provider comparison with clearly labeled clips",
+          "what_works": "Viewers can form their own opinion; high shareability"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.grandviewresearch.com/industry-analysis/ai-video-generator-market",
+          "title": "AI Video Generator Market Size Report",
+          "used_for": "market size data point",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://fal.ai/models/kling-video",
+          "title": "Kling Video on fal.ai \u2014 pricing and capabilities",
+          "used_for": "cost per second data point",
+          "reliability": "primary"
+        },
+        {
+          "url": "https://runwayml.com/research/2025-creator-survey",
+          "title": "Runway Creator Survey 2025",
+          "used_for": "prompt iteration time data point",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://www.heygen.com/pricing",
+          "title": "HeyGen Pricing Page",
+          "used_for": "subscription vs API economics analysis",
+          "reliability": "primary"
+        },
+        {
+          "url": "https://www.tubefilter.com/2025/03/ai-broll-retention-study",
+          "title": "AI B-Roll Retention Study",
+          "used_for": "watch-time parity data point",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=42000000",
+          "title": "Ask HN: What's your AI video production stack in 2025?",
+          "used_for": "community pain points and sentiment",
+          "reliability": "anecdotal"
+        }
+      ],
+      "metadata": {
+        "pipeline": "framework-smoke",
+        "project_id": "smoke-test-20260413",
+        "generated_by": "agent"
+      }
+    }
+  },
+  "cost_snapshot": {
+    "total_usd": 0.0
+  }
+}

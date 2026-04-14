@@ -1,0 +1,127 @@
+{
+  "version": "1.0",
+  "project_id": "smoke-test-20260413",
+  "pipeline_type": "framework-smoke",
+  "stage": "script",
+  "status": "completed",
+  "timestamp": "2026-04-13T11:27:56.774249+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "The Hidden Cost of AI Video",
+      "total_duration_seconds": 20,
+      "sections": [
+        {
+          "id": "s1_hook",
+          "label": "Hook",
+          "text": "AI video looks cheap. Until you start counting the hours.",
+          "start_seconds": 0,
+          "end_seconds": 5,
+          "speaker_directions": "Punchy, slight pause after 'cheap'",
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "Cinematic close-up of a laptop screen with video generation UI \u2014 Magic Hour 2s clip",
+              "timestamp_seconds": 0
+            },
+            {
+              "type": "overlay",
+              "description": "Giphy reaction GIF: mind-blown or shocked face \u2014 appears at timestamp 3s",
+              "timestamp_seconds": 3
+            }
+          ],
+          "source_ref": "Runway Creator Survey 2025 \u2014 82% prompt iteration finding"
+        },
+        {
+          "id": "s2_pain",
+          "label": "Pain Point",
+          "text": "82% of creators spend more time re-generating than filming. The real cost isn't the API \u2014 it's your time.",
+          "start_seconds": 5,
+          "end_seconds": 13,
+          "speaker_directions": "Measured, slightly urgent on 'your time'",
+          "enhancement_cues": [
+            {
+              "type": "stat_card",
+              "description": "Bold stat card: '82%' large number, subtitle 'spend more time re-generating than filming'",
+              "timestamp_seconds": 5
+            },
+            {
+              "type": "broll",
+              "description": "Pexels stock: person looking frustrated at computer screen \u2014 2s clip",
+              "timestamp_seconds": 8
+            },
+            {
+              "type": "broll",
+              "description": "Google Flow generated: abstract time/clock visualization, 2s \u2014 cinematic",
+              "timestamp_seconds": 10
+            }
+          ],
+          "source_ref": "https://runwayml.com/research/2025-creator-survey"
+        },
+        {
+          "id": "s3_solution",
+          "label": "Solution",
+          "text": "The fix: orchestrate, not iterate. Chain tools. Set fallbacks. Ship.",
+          "start_seconds": 13,
+          "end_seconds": 18,
+          "speaker_directions": "Confident, each sentence its own beat",
+          "enhancement_cues": [
+            {
+              "type": "diagram",
+              "description": "Simple flow diagram: Prompt \u2192 Generate \u2192 Fallback \u2192 Output",
+              "timestamp_seconds": 13
+            },
+            {
+              "type": "broll",
+              "description": "Google Imagen generated: clean futuristic pipeline visualization \u2014 2s",
+              "timestamp_seconds": 15
+            }
+          ]
+        },
+        {
+          "id": "s4_cta",
+          "label": "CTA",
+          "text": "OpenMontage. Build it once.",
+          "start_seconds": 18,
+          "end_seconds": 20,
+          "speaker_directions": "Clean, confident close",
+          "enhancement_cues": [
+            {
+              "type": "overlay",
+              "description": "Text card: OpenMontage logo/wordmark + tagline 'Build it once'",
+              "timestamp_seconds": 18
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "pipeline": "framework-smoke",
+        "project_id": "smoke-test-20260413",
+        "angle": "The hidden cost of AI video iteration",
+        "target_duration": "20s",
+        "tools_plan": {
+          "video": [
+            "magic_hour_video",
+            "google_flow_video",
+            "pexels_video"
+          ],
+          "images": [
+            "google_imagen",
+            "pexels_image"
+          ],
+          "overlays": [
+            "giphy_search"
+          ],
+          "tts": "google_tts",
+          "compose": "video_compose"
+        }
+      }
+    }
+  },
+  "cost_snapshot": {
+    "total_usd": 0.0
+  }
+}
